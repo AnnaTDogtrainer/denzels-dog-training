@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1-1 Dog Training in Lincoln | Denzel's Dog Training</title>
+<meta name="description" content="In-home one-to-one dog training and behaviour help across Lincoln. For barking, lunging and pulling on the lead. Book a free 30-minute call with Anna.">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="canonical" href="https://annatdogtrainer.github.io/denzels-dog-training/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1-1 Dog Training in Lincoln | Denzel's Dog Training">
+<meta property="og:description" content="Exhausted by barking, lunging or pulling on the lead? In-home one-to-one training across Lincoln. Book a free 30-minute call.">
+<meta property="og:url" content="https://annatdogtrainer.github.io/denzels-dog-training/">
+<meta property="og:image" content="https://annatdogtrainer.github.io/denzels-dog-training/images/hero-anna-denzel-bridge.jpg">
+<meta property="og:image:alt" content="Anna from Denzel's Dog Training with her dog on a bridge in Lincoln">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange: #FF7F00;
+    --orange-dark: #C25E00;   /* large text / headings only */
+    --orange-text: #A64F00;   /* small orange text — passes AA on cream + tint */
+    --tint: #FFE9D4;
+    --charcoal: #222326;
+    --charcoal-soft: #2e3034;
+    --cream: #FAF7F2;
+    --ink: #222326;
+    --ink-muted: #4a4b50;
+    --cream-muted: #cfc9c0;
+    --line: #e5ded4;
+    --font-display: "Archivo Black", "Arial Black", sans-serif;
+    --font-body: "Work Sans", -apple-system, sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:0 24px; }
+  section{ position:relative; }
+
+  h1,h2,h3{ font-family:var(--font-display); text-transform:uppercase; line-height:1.06; letter-spacing:0.01em; }
+  .eyebrow{
+    font-family:var(--font-body); font-weight:700; text-transform:uppercase;
+    letter-spacing:0.16em; font-size:15px; color:var(--orange-text);
+  }
+  .accent{ color:var(--orange-dark); }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--orange); color:var(--charcoal); font-weight:700;
+    font-family:var(--font-body); text-transform:uppercase; letter-spacing:0.04em;
+    font-size:16px; padding:18px 32px; border-radius:4px;
+    box-shadow:0 0 0 2px var(--orange);
+    transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{ background:var(--charcoal); color:var(--orange); box-shadow:0 0 0 2px var(--charcoal); transform:translateY(-2px); }
+  .btn:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; }
+  .btn svg{ width:16px; height:16px; flex:0 0 auto; }
+  .btn-on-dark{ background:var(--orange); color:var(--charcoal); box-shadow:0 0 0 2px var(--orange); }
+  .btn-on-dark:hover{ background:var(--cream); color:var(--charcoal); box-shadow:0 0 0 2px var(--cream); }
+
+  /* NAV */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,247,242,0.93); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  header.nav .wrap{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; }
+  .nav-brand{ display:flex; align-items:center; gap:11px; }
+  .nav-brand img{ width:38px; height:38px; }
+  .logo{ font-family:var(--font-display); font-size:17px; letter-spacing:0.02em; }
+  .logo .dot{ color:var(--orange); }
+  .nav-cta{ font-size:13px; padding:12px 20px; }
+
+  /* HERO */
+  .hero{ min-height:86vh; display:flex; align-items:flex-end; position:relative; overflow:hidden; }
+  .hero-media{ position:absolute; inset:0; z-index:0; }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; object-position:30% 34%; }
+  .hero-media::after{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(100deg, rgba(250,247,242,0) 26%, rgba(250,247,242,0.55) 40%, rgba(250,247,242,0.95) 54%, rgba(250,247,242,0.99) 70%);
+  }
+  .hero-content{ position:relative; z-index:1; padding:110px 0 70px; }
+  .hero-text{ max-width:540px; margin-left:auto; text-align:right; }
+  .hero-text .eyebrow{ font-size:17px; letter-spacing:0.14em; }
+  .hero h1{ font-size:clamp(34px, 4.4vw, 54px); margin:14px 0 20px; color:var(--charcoal); }
+  .hero p.lead{
+    color:var(--ink); font-size:20px; font-weight:600; line-height:1.5;
+    margin-bottom:32px; margin-left:auto;
+    text-shadow:0 1px 2px rgba(250,247,242,0.95), 0 0 16px rgba(250,247,242,0.9);
+  }
+  .hero-badges{ display:flex; gap:14px 20px; margin-top:38px; flex-wrap:wrap; justify-content:flex-end; }
+  .hero-badges div{
+    font-size:14px; color:var(--charcoal); text-transform:uppercase; letter-spacing:0.08em;
+    border-left:3px solid var(--orange); padding-left:12px; font-weight:700;
+  }
+
+  /* SECTIONS */
+  .section{ padding:92px 0; }
+  .section-tight{ padding:72px 0; }
+  .section h2{ font-size:clamp(28px,3.6vw,44px); margin:12px 0 22px; }
+  .section-lead{ color:var(--ink-muted); font-size:18.5px; max-width:660px; }
+  .band-tint{ background:var(--tint); }
+  .band-dark{ background:var(--charcoal); color:var(--cream); }
+  .band-dark h2, .band-dark h3{ color:var(--cream); }
+  .band-dark .eyebrow{ color:var(--orange); }
+
+  /* SOUND LIKE YOU */
+  .pain-heading{ text-align:center; }
+  .pain-lead{ text-align:center; margin:0 auto; }
+  .pain-points{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px 36px;
+    margin:40px auto 0; max-width:860px;
+  }
+  .pain-item{
+    display:flex; align-items:flex-start; gap:12px; font-size:18px; color:var(--ink);
+    background:var(--cream); border-radius:6px; padding:16px 18px; border-left:4px solid var(--orange);
+  }
+  .pain-item .check{ color:var(--orange-text); font-weight:700; font-size:18px; flex:0 0 auto; line-height:1.45; }
+  .pain-foot{ text-align:center; margin-top:34px; font-size:19px; font-weight:700; }
+
+  /* HOW I CAN HELP */
+  .helps{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:46px; }
+  .help-photo{
+    aspect-ratio:3/4; border-radius:6px; overflow:hidden;
+    border:4px solid var(--orange); margin-bottom:16px;
+  }
+  .help-photo img{ width:100%; height:100%; object-fit:cover; object-position:center center; }
+  .help h3{ font-family:var(--font-body); font-weight:700; text-transform:none; font-size:18.5px; margin-bottom:6px; letter-spacing:0; }
+  .help p{ color:var(--ink-muted); font-size:16.5px; line-height:1.55; }
+
+  /* WHY ME */
+  .why-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center; }
+  .why-list{ list-style:none; margin:22px 0 24px; max-width:560px; }
+  .why-list li{
+    position:relative; padding-left:30px; color:var(--ink); font-size:18px;
+    line-height:1.55; margin-bottom:16px;
+  }
+  .why-list li::before{
+    content:"\2713"; position:absolute; left:0; top:1px;
+    color:var(--orange-text); font-weight:700;
+  }
+  .why-line{
+    font-weight:700; font-size:19px; color:var(--ink);
+    margin:4px 0 0; padding-left:22px; border-left:4px solid var(--orange);
+    line-height:1.5; max-width:560px;
+  }
+  .why-photo img{
+    border-radius:6px; width:100%; aspect-ratio:4/5; object-fit:cover;
+    border:5px solid var(--orange);
+  }
+  .photo-credit{
+    margin-top:14px; font-size:15px; line-height:1.5; color:var(--ink-muted);
+    text-align:center;
+  }
+
+  /* WHO FOR */
+  .for-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:44px; }
+  .for-card{ background:var(--cream); border:1px solid var(--line); border-radius:8px; padding:30px 28px; }
+  .for-card.no{ background:transparent; border-style:dashed; }
+  .for-card h3{ font-family:var(--font-body); font-weight:700; text-transform:none; font-size:20px; letter-spacing:0; margin-bottom:16px; }
+  .for-card ul{ list-style:none; }
+  .for-card li{ position:relative; padding-left:28px; font-size:17px; line-height:1.5; margin-bottom:14px; color:var(--ink); }
+  .for-card li:last-child{ margin-bottom:0; }
+  .for-card.yes li::before{ content:"\2713"; position:absolute; left:0; color:var(--orange-text); font-weight:700; }
+  .for-card.no li::before{ content:"\2014"; position:absolute; left:0; color:var(--ink-muted); font-weight:700; }
+
+  /* REVIEWS */
+  .reviews-wrap{ margin-top:44px; display:flex; justify-content:center; }
+  .reviews-wrap img{ width:100%; max-width:780px; height:auto; border-radius:8px; }
+
+  /* FAQ */
+  .faq-list{ margin-top:38px; border-top:1px solid var(--line); max-width:820px; }
+  .faq-item{ border-bottom:1px solid var(--line); padding:22px 0; }
+  .faq-item summary{
+    cursor:pointer; font-weight:700; font-size:18.5px; list-style:none;
+    display:flex; justify-content:space-between; align-items:center; gap:24px;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary::after{
+    content:"+"; color:var(--orange-text); font-size:26px; font-family:var(--font-display);
+    flex:0 0 auto; line-height:1;
+  }
+  .faq-item[open] summary::after{ content:"\2212"; }
+  .faq-item p{ color:var(--ink-muted); font-size:17px; margin-top:12px; max-width:720px; }
+
+  /* FINAL CTA */
+  .final{ text-align:center; padding:92px 0 84px; }
+  .final-logo{ max-width:330px; margin:0 auto 34px; }
+  .final h2{ font-size:clamp(30px,4.4vw,50px); }
+  .final p{ color:var(--cream-muted); font-size:19px; margin:20px auto 34px; max-width:560px; }
+  .final .btn{ font-size:17px; padding:20px 38px; }
+  .final .fineprint{ margin-top:20px; font-size:15px; color:#8f8a83; }
+
+  /* CREDENTIALS */
+  .cred-line{
+    text-align:center; font-size:15px; color:var(--ink-muted);
+    text-transform:uppercase; letter-spacing:0.07em; font-weight:700; margin-bottom:30px;
+  }
+  .cred-dot{ color:var(--orange-text); margin:0 10px; }
+  .cred-badges{ display:flex; justify-content:center; align-items:center; gap:46px; flex-wrap:wrap; }
+  .cred-badges img{
+    height:66px; width:auto; background:#fff; border:1px solid var(--line);
+    border-radius:8px; padding:9px 12px; box-sizing:content-box;
+  }
+
+  /* FOOTER */
+  footer{ border-top:1px solid var(--line); padding:30px 0; }
+  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px; }
+  .footer-brand{ display:flex; align-items:center; gap:11px; }
+  .footer-brand img{ width:34px; height:34px; }
+  footer p{ color:var(--ink-muted); font-size:14px; order:3; width:100%; text-align:center; }
+  @media(min-width:640px){ footer p{ width:auto; text-align:left; order:0; } }
+  .footer-social{ display:flex; gap:16px; order:2; }
+  .footer-social a{ color:var(--ink-muted); display:flex; transition:color .18s ease; }
+  .footer-social a:hover{ color:var(--orange-text); }
+  .footer-social svg{ width:20px; height:20px; }
+
+  @media (max-width: 880px){
+    .why-grid{ grid-template-columns:1fr; gap:40px; }
+    .why-photo{ order:-1; margin:0 auto; max-width:340px; }
+    .helps{ grid-template-columns:1fr 1fr; gap:30px 22px; }
+    .pain-points{ grid-template-columns:1fr; }
+    .for-grid{ grid-template-columns:1fr; }
+    .cred-badges{ gap:26px; }
+    .cred-badges img{ height:56px; }
+    .cred-line{ line-height:2; }
+    .section{ padding:68px 0; }
+    .nav-cta{ display:none; }
+
+    /* Hero stacks on phones so the photo is never covered by text */
+    .hero{ display:block; min-height:0; }
+    .hero-media{ position:relative; aspect-ratio:4/3; }
+    .hero-media img{ object-position:45% 42%; }
+    .hero-media::after{ display:none; }
+    .hero-content{ padding:32px 0 54px; }
+    .hero-text{ max-width:none; margin-left:0; text-align:left; }
+    .hero-text .eyebrow{ font-size:15px; }
+    .hero h1{ font-size:clamp(30px,8vw,44px); margin:12px 0 16px; }
+    .hero p.lead{ font-size:18px; text-shadow:none; margin-bottom:26px; }
+    .hero-badges{ justify-content:flex-start; margin-top:30px; gap:12px 18px; }
+    .why-line{ max-width:none; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="nav-brand">
+      <img src="images/favicon.png" alt="" width="38" height="38">
+      <span class="logo">DENZEL'S<span class="dot">.</span> DOG TRAINING</span>
+    </div>
+    <a class="btn nav-cta" href="https://www.denzelsdogtraining.co.uk/booking-calendar/free-consultation-call-1">Let's Talk About Your Dog</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media"><img src="images/hero-anna-denzel-bridge.jpg" alt="Anna with her dog Denzel on a bridge in Lincoln"></div>
+  <div class="hero-content wrap">
+    <div class="hero-text">
+      <div class="eyebrow">1&ndash;1 Dog Training &middot; Lincoln</div>
+      <h1>Exhausted by barking, lunging or pulling on the lead? <span class="accent">You're not alone.</span></h1>
+      <p class="lead">One-to-one, in-home dog training across Lincoln. I teach your dog what to do &mdash; not just what to stop doing.</p>
+      <a class="btn" href="https://www.denzelsdogtraining.co.uk/booking-calendar/free-consultation-call-1">
+        Book a free 30-minute call
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="hero-badges">
+        <div>Firm, Fair &amp; Fun</div>
+        <div>In-Home Training</div>
+        <div>Ongoing WhatsApp Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight band-tint">
+  <div class="wrap">
+    <h2 class="pain-heading">Does this sound like you?</h2>
+    <div class="pain-points">
+      <div class="pain-item"><span class="check">&#10003;</span><span>You're embarrassed when another dog appears</span></div>
+      <div class="pain-item"><span class="check">&#10003;</span><span>You avoid the popular walking routes</span></div>
+      <div class="pain-item"><span class="check">&#10003;</span><span>Friends don't really visit any more</span></div>
+      <div class="pain-item"><span class="check">&#10003;</span><span>Nobody else in the family will walk the dog</span></div>
+      <div class="pain-item"><span class="check">&#10003;</span><span>You've tried other trainers and classes&hellip;</span></div>
+      <div class="pain-item"><span class="check">&#10003;</span><span>&hellip;and nothing seems to stick</span></div>
+    </div>
+    <p class="pain-foot">If you're nodding along, we should talk.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">How I can help</div>
+    <h2>What changes when we work together</h2>
+    <p class="section-lead">I come to your home and your streets, and coach you as well as your dog &mdash; so the results still work once I've gone.</p>
+    <div class="helps">
+      <div class="help">
+        <div class="help-photo"><img src="images/outcome-clear-routines.jpg" alt="A calm Samoyed settled on a raised bed in the garden" loading="lazy" decoding="async"></div>
+        <h3>A calmer home</h3>
+        <p>Predictable routines that settle your dog. No more barking at the door or the window.</p>
+      </div>
+      <div class="help">
+        <div class="help-photo"><img src="images/outcome-handling-confidence.jpg" alt="A client confidently walking two dogs on lead together" loading="lazy" decoding="async"></div>
+        <h3>Confidence on the lead</h3>
+        <p>You'll know what to do when a trigger appears, instead of bracing for it.</p>
+      </div>
+      <div class="help">
+        <div class="help-photo"><img src="images/outcome-calmer-dog.jpg" alt="A client sitting outside a cafe with her relaxed dachshund" loading="lazy" decoding="async"></div>
+        <h3>A dog who listens</h3>
+        <p>Your dog responds because they want to, not because they're being managed.</p>
+      </div>
+      <div class="help">
+        <div class="help-photo"><img src="images/outcome-stress-free-walks.jpg" alt="A client walking her miniature dachshund calmly on a Lincoln street" loading="lazy" decoding="async"></div>
+        <h3>Walks you enjoy again</h3>
+        <p>Ordinary outings, without the tension, the pulling or the scanning ahead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band-tint">
+  <div class="wrap why-grid">
+    <div class="why-copy">
+      <div class="eyebrow">Why work with me</div>
+      <h2>Why I'm <span class="accent">different</span></h2>
+      <ul class="why-list">
+        <li>I come to you &mdash; home visits across Lincoln</li>
+        <li>WhatsApp support between sessions, with short session videos &amp; photos</li>
+        <li>Built around your real life, not a training hall</li>
+        <li>I've trained hundreds of owners, not just dogs</li>
+      </ul>
+      <p class="why-line">No conflicting advice, no judgement, no jargon.</p>
+    </div>
+    <div class="why-photo">
+      <img src="images/anna-training-samoyed.jpg" alt="Anna training a Samoyed on a raised bed in a Lincoln garden" loading="lazy" decoding="async">
+      <p class="photo-credit">Guild of Dog Trainers Professional Instructor. 15 years teaching and coaching adults.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Who it's for</div>
+    <h2>Is this right for you?</h2>
+    <div class="for-grid">
+      <div class="for-card yes">
+        <h3>This is for you if&hellip;</h3>
+        <ul>
+          <li>Your dog barks, lunges or pulls, and walks have stopped being fun</li>
+          <li>You want to understand your dog, not just manage them</li>
+          <li>You can practise for ten minutes most days</li>
+          <li>You'd rather be coached in your own home than sit in a class</li>
+        </ul>
+      </div>
+      <div class="for-card no">
+        <h3>It's probably not for you if&hellip;</h3>
+        <ul>
+          <li>You want a quick fix. This takes weeks, not one session</li>
+          <li>You want your dog trained without you. I coach you too</li>
+          <li>Your dog has bitten, or aggression is the main issue &mdash; that needs my behaviour programme instead</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight band-dark">
+  <div class="wrap">
+    <div class="eyebrow">Don't take my word for it</div>
+    <h2>What my clients say</h2>
+    <div class="reviews-wrap">
+      <img src="images/client-reviews.png" alt="Five-star reviews from Lincoln dog owners" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">FAQs</div>
+    <h2>Things people usually ask</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>I've already tried trainers and classes. Why would this be different?</summary>
+        <p>Most people who come to me have been through exactly that. The difference is this isn't a one-off session where you get some advice and then you're on your own. It's one-to-one, in your home and your neighbourhood, with a plan to work from and WhatsApp support between sessions.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does it cost?</summary>
+        <p>Every dog and every household is different, so I price the programme around what you actually need. I'll walk you through it on the free call, once I understand what you're dealing with. There's no obligation, and you can spread payment via PayPal's Pay in 3.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long until I see results?</summary>
+        <p>Most clients see a difference after the second session. More complex issues &mdash; reactivity in particular &mdash; take longer, and depend on consistency between sessions as much as during them.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are you a dog trainer or a behaviourist?</summary>
+        <p>Both. I train dogs and I run a separate behaviour programme for reactivity and other problem behaviour. The approach is built around the individual case, using balanced, evidence-based methods. No vet referral needed &mdash; though if I think pain or a medical issue may be playing a part, I'll say so and suggest a vet check alongside our work.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What breeds do you work with?</summary>
+        <p>Any breed. I've worked with everything from Chihuahuas to German Shepherds. The programme is tailored to your dog, whatever they are.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final band-dark">
+  <div class="wrap">
+    <div class="final-logo"><img src="images/denzels-logo-dark.png" alt="Denzel's Dog Training" loading="lazy" decoding="async"></div>
+    <h2>Let's talk about <span style="color:var(--orange)">your dog</span></h2>
+    <p>Book a free 30-minute call. Tell me what's going on, and I'll tell you honestly whether I can help.</p>
+    <a class="btn btn-on-dark" href="https://www.denzelsdogtraining.co.uk/booking-calendar/free-consultation-call-1">
+      Book a free 30-minute call
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <div class="fineprint">No pressure, no obligation &mdash; just a conversation about your dog.</div>
+  </div>
+</section>
+
+<section class="section-tight creds" style="padding:50px 0 46px;">
+  <div class="wrap">
+    <div class="cred-line">
+      <span>Guild of Dog Trainers Professional Instructor</span><span class="cred-dot">&middot;</span>
+      <span>DBS Checked</span><span class="cred-dot">&middot;</span>
+      <span>Fully Insured</span><span class="cred-dot">&middot;</span>
+      <span>5&#9733; Rated</span>
+    </div>
+    <div class="cred-badges">
+      <img src="images/badge-guild-of-dog-trainers.png" alt="Member of the Guild of Dog Trainers" loading="lazy" decoding="async">
+      <img src="images/badge-iacp.png" alt="International Association of Canine Professionals member" loading="lazy" decoding="async">
+      <img src="images/badge-cawc-code-of-practice.png" alt="Signatory to the CAWC Dog Behaviour and Training Code of Practice" loading="lazy" decoding="async">
+      <img src="images/badge-british-college-canine.png" alt="British College of Canine Studies" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="images/favicon.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+      <span class="logo" style="font-size:14px;">DENZEL'S<span class="dot">.</span> DOG TRAINING</span>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/denzels_dog_training/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a href="https://www.facebook.com/Denzelsdogtraining" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v7h3v-7h2.5l.5-3H14v-1.5c0-.5.3-1 1-1h2V8z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/annatdogtrainer" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="10" x2="8" y2="17"/><circle cx="8" cy="6.8" r="0.9" fill="currentColor" stroke="none"/><path d="M12 17v-4.5a2.2 2.2 0 0 1 4.4 0V17"/></svg>
+      </a>
+    </div>
+    <p>&copy; 2026 Denzel's Dog Training, Lincoln. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Denzel's Dog Training",
+  "description":"In-home one-to-one dog training and behaviour support across Lincoln.",
+  "url":"https://annatdogtrainer.github.io/denzels-dog-training/",
+  "image":"https://annatdogtrainer.github.io/denzels-dog-training/images/hero-anna-denzel-bridge.jpg",
+  "areaServed":{"@type":"City","name":"Lincoln, England"},
+  "address":{"@type":"PostalAddress","addressLocality":"Lincoln","addressRegion":"Lincolnshire","addressCountry":"GB"},
+  "sameAs":[
+    "https://www.instagram.com/denzels_dog_training/",
+    "https://www.facebook.com/Denzelsdogtraining",
+    "https://www.linkedin.com/in/annatdogtrainer"
+  ]
+}
+</script>
+
+</body>
+</html>
