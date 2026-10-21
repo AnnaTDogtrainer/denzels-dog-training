@@ -184,8 +184,23 @@
   .for-card.no li::before{ content:"\2014"; position:absolute; left:0; color:var(--ink-muted); font-weight:700; }
 
   /* REVIEWS */
-  .reviews-wrap{ margin-top:44px; display:flex; justify-content:center; }
-  .reviews-wrap img{ width:100%; max-width:780px; height:auto; border-radius:8px; }
+  .reviews{ margin:42px auto 0; max-width:780px; display:flex; flex-direction:column; gap:16px; }
+  .review{
+    background:#fff; color:var(--ink); border-radius:10px;
+    border-left:7px solid var(--orange); padding:22px 26px;
+  }
+  .review p{ font-size:18px; line-height:1.55; margin-bottom:12px; }
+  .review .by{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:15.5px; color:#5a5c62; }
+  .review .stars{ color:#D96A00; letter-spacing:1px; font-size:15px; }
+  .review .who{ font-weight:600; color:var(--ink); }
+  @media (max-width:880px){
+    .review{ padding:18px 20px; border-left-width:6px; }
+    .review p{ font-size:17px; }
+    /* breed drops to its own line, so drop the separator with it */
+    .review .by [aria-hidden="true"]{ display:none; }
+    .review .by{ gap:4px 10px; }
+    .review .by .who + span{ flex-basis:100%; }
+  }
 
   /* FAQ */
   .faq-list{ margin-top:38px; border-top:1px solid var(--line); max-width:820px; }
@@ -393,8 +408,52 @@
   <div class="wrap">
     <div class="eyebrow">Don't take my word for it</div>
     <h2>What my clients say</h2>
-    <div class="reviews-wrap">
-      <img src="images/client-reviews.png" alt="Five-star reviews from Lincoln dog owners" loading="lazy" decoding="async">
+    <div class="reviews">
+      <blockquote class="review">
+        <p>&ldquo;The transformation has been incredible, our poodle is much calmer, more responsive and we are more confident in handling situations that we used to dread.&rdquo;</p>
+        <div class="by">
+          <span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="who">Claire M.</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>fear-reactive poodle</span>
+        </div>
+      </blockquote>
+      <blockquote class="review">
+        <p>&ldquo;I have found a new love for Winnie on this journey and a sense of calm and harmony with a bond and relationship I never thought we could have.&rdquo;</p>
+        <div class="by">
+          <span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="who">Claire T.</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>Winnie</span>
+        </div>
+      </blockquote>
+      <blockquote class="review">
+        <p>&ldquo;When I approached Anna, I was at my wits end!&hellip; Our walks are now calm and enjoyable, she no longer pulls like a freight train.&rdquo;</p>
+        <div class="by">
+          <span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="who">Helen R.</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>Jack Russell cross</span>
+        </div>
+      </blockquote>
+      <blockquote class="review">
+        <p>&ldquo;Walks are calmer, the Hoover is no longer the enemy, and our dog is far more confident and settled around other dogs&hellip;&rdquo;</p>
+        <div class="by">
+          <span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="who">Jacob N.</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>cockapoo</span>
+        </div>
+      </blockquote>
+      <blockquote class="review">
+        <p>&ldquo;Fast forward to today and we're back enjoying long walks, pub lunches, and life with a much calmer dog.&rdquo;</p>
+        <div class="by">
+          <span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="who">Andy</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>miniature dachshund</span>
+        </div>
+      </blockquote>
     </div>
   </div>
 </section>
