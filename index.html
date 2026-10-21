@@ -86,23 +86,20 @@
   .nav-cta{ font-size:13px; padding:12px 20px; }
 
   /* HERO */
-  .hero{ min-height:86vh; display:flex; align-items:flex-end; position:relative; overflow:hidden; }
-  .hero-media{ position:absolute; inset:0; z-index:0; }
-  .hero-media img{ width:100%; height:100%; object-fit:cover; object-position:30% 34%; }
-  .hero-media::after{
-    content:""; position:absolute; inset:0;
-    background: linear-gradient(100deg, rgba(250,247,242,0) 26%, rgba(250,247,242,0.55) 40%, rgba(250,247,242,0.95) 54%, rgba(250,247,242,0.99) 70%);
+  /* Photo and words sit side by side — no text over the photo, so it
+     behaves the same on a laptop and on a very wide monitor. */
+  .hero{ display:grid; grid-template-columns:1.02fr 0.98fr; align-items:stretch; }
+  .hero-media{ position:relative; min-height:440px; }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; object-position:46% 42%; }
+  .hero-content{
+    display:flex; align-items:center; justify-content:flex-start;
+    background:var(--cream); padding:64px clamp(28px,4vw,68px);
   }
-  .hero-content{ position:relative; z-index:1; padding:110px 0 70px; }
-  .hero-text{ max-width:540px; margin-left:auto; text-align:right; }
-  .hero-text .eyebrow{ font-size:17px; letter-spacing:0.14em; }
-  .hero h1{ font-size:clamp(34px, 4.4vw, 54px); margin:14px 0 20px; color:var(--charcoal); }
-  .hero p.lead{
-    color:var(--ink); font-size:20px; font-weight:600; line-height:1.5;
-    margin-bottom:32px; margin-left:auto;
-    text-shadow:0 1px 2px rgba(250,247,242,0.95), 0 0 16px rgba(250,247,242,0.9);
-  }
-  .hero-badges{ display:flex; gap:14px 20px; margin-top:38px; flex-wrap:wrap; justify-content:flex-end; }
+  .hero-text{ max-width:560px; text-align:left; }
+  .hero-text .eyebrow{ font-size:16px; letter-spacing:0.14em; }
+  .hero h1{ font-size:clamp(32px, 2.9vw, 50px); margin:14px 0 20px; color:var(--charcoal); }
+  .hero p.lead{ color:var(--ink); font-size:19.5px; font-weight:600; line-height:1.5; margin-bottom:32px; }
+  .hero-badges{ display:flex; gap:14px 20px; margin-top:36px; flex-wrap:wrap; justify-content:flex-start; }
   .hero-badges div{
     font-size:14px; color:var(--charcoal); text-transform:uppercase; letter-spacing:0.08em;
     border-left:3px solid var(--orange); padding-left:12px; font-weight:700;
@@ -115,6 +112,14 @@
   .section-lead{ color:var(--ink-muted); font-size:18.5px; max-width:660px; }
   .band-tint{ background:var(--tint); }
   .band-dark{ background:var(--charcoal); color:var(--cream); }
+  .band-orange{ background:var(--orange); color:var(--charcoal); }
+  .band-orange h2, .band-orange h3, .band-orange .accent{ color:var(--charcoal); }
+  .band-orange .eyebrow{ color:#5c2d00; }
+  .band-orange .why-list li{ color:var(--charcoal); }
+  .band-orange .why-list li::before{ color:#5c2d00; }
+  .band-orange .why-line{ color:var(--charcoal); border-left-color:var(--charcoal); }
+  .band-orange .photo-credit{ color:#5c2d00; }
+  .band-orange .why-photo img{ border-color:var(--charcoal); }
   .band-dark h2, .band-dark h3{ color:var(--cream); }
   .band-dark .eyebrow{ color:var(--orange); }
 
@@ -127,10 +132,10 @@
   }
   .pain-item{
     display:flex; align-items:flex-start; gap:12px; font-size:18px; color:var(--ink);
-    background:var(--cream); border-radius:6px; padding:16px 18px; border-left:4px solid var(--orange);
+    background:var(--charcoal-soft); color:var(--cream); border-radius:6px; padding:16px 18px; border-left:4px solid var(--orange);
   }
-  .pain-item .check{ color:var(--orange-text); font-weight:700; font-size:18px; flex:0 0 auto; line-height:1.45; }
-  .pain-foot{ text-align:center; margin-top:34px; font-size:19px; font-weight:700; }
+  .pain-item .check{ color:var(--orange); font-weight:700; font-size:18px; flex:0 0 auto; line-height:1.45; }
+  .pain-foot{ text-align:center; margin-top:34px; font-size:19px; font-weight:700; color:var(--cream); }
 
   /* HOW I CAN HELP */
   .helps{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:46px; }
@@ -169,7 +174,7 @@
 
   /* WHO FOR */
   .for-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:44px; }
-  .for-card{ background:var(--cream); border:1px solid var(--line); border-radius:8px; padding:30px 28px; }
+  .for-card{ background:var(--tint); border:1px solid #f0d9c0; border-radius:8px; padding:30px 28px; }
   .for-card.no{ background:transparent; border-style:dashed; }
   .for-card h3{ font-family:var(--font-body); font-weight:700; text-transform:none; font-size:20px; letter-spacing:0; margin-bottom:16px; }
   .for-card ul{ list-style:none; }
@@ -241,17 +246,18 @@
     .section{ padding:68px 0; }
     .nav-cta{ display:none; }
 
-    /* Hero stacks on phones so the photo is never covered by text */
-    .hero{ display:block; min-height:0; }
-    .hero-media{ position:relative; aspect-ratio:4/3; }
+    /* Hero stacks on phones: photo on top, words underneath */
+    .hero{ grid-template-columns:1fr; }
+    .hero-media{ min-height:0; aspect-ratio:4/3; }
     .hero-media img{ object-position:45% 42%; }
-    .hero-media::after{ display:none; }
-    .hero-content{ padding:32px 0 54px; }
-    .hero-text{ max-width:none; margin-left:0; text-align:left; }
+    .hero-content{ padding:32px 24px 54px; }
+    .hero-text{ max-width:none; }
     .hero-text .eyebrow{ font-size:15px; }
     .hero h1{ font-size:clamp(30px,8vw,44px); margin:12px 0 16px; }
-    .hero p.lead{ font-size:18px; text-shadow:none; margin-bottom:26px; }
-    .hero-badges{ justify-content:flex-start; margin-top:30px; gap:12px 18px; }
+    .hero p.lead{ font-size:18px; margin-bottom:26px; }
+    .hero-badges{ margin-top:30px; gap:12px 18px; }
+    .btn{ font-size:15px; padding:17px 24px; letter-spacing:0.03em; }
+    .final .btn{ font-size:15.5px; padding:18px 26px; }
     .why-line{ max-width:none; }
   }
 
@@ -274,7 +280,7 @@
 
 <section class="hero">
   <div class="hero-media"><img src="images/hero-anna-denzel-bridge.jpg" alt="Anna with her dog Denzel on a bridge in Lincoln"></div>
-  <div class="hero-content wrap">
+  <div class="hero-content">
     <div class="hero-text">
       <div class="eyebrow">1&ndash;1 Dog Training &middot; Lincoln</div>
       <h1>Exhausted by barking, lunging or pulling on the lead? <span class="accent">You're not alone.</span></h1>
@@ -292,7 +298,7 @@
   </div>
 </section>
 
-<section class="section-tight band-tint">
+<section class="section-tight band-dark">
   <div class="wrap">
     <h2 class="pain-heading">Does this sound like you?</h2>
     <div class="pain-points">
@@ -337,7 +343,7 @@
   </div>
 </section>
 
-<section class="section band-tint">
+<section class="section band-orange">
   <div class="wrap why-grid">
     <div class="why-copy">
       <div class="eyebrow">Why work with me</div>
